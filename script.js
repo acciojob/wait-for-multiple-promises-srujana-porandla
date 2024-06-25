@@ -28,13 +28,13 @@ Promise.all(promises).then(results=>{
         <td>${time.toFixed(3)}</td>`;
 		tableBody.appendChild(row);
 	});
-	const totalTime=results.reduce((acc, curr) => acc + curr, 0);
+	/*const totalTime=results.reduce((acc, curr) => acc + curr, 0);
 	const totalRow=document.createElement('tr');
 	  totalRow.innerHTML = `
             <td>Total</td>
             <td>${totalTime.toFixed(3)}</td>
         `;
-        tableBody.appendChild(totalRow);
+        tableBody.appendChild(totalRow);*/
 }) .catch(error => {
         console.error('Error waiting for promises:', error);
 	    tableBody.innerHTML = `<tr><td colspan="2">Error: ${error.message}</td></tr>`;
