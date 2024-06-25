@@ -17,10 +17,9 @@ const loadingRow = document.getElementById('loading');
 
 
 loadingRow.style.display = ''
-Promise.all(promises).then(results=>{
+Promise.all(promises).then(results => {
 	console.log('All promises resolved:', results);
-	 loadingRow.style.display = 'none';
-    tableBody.innerHTML = '';
+	 
 	results.forEach((time,index)=>{
 		const row=document.createElement('tr');
 		row.innerHTML=`
