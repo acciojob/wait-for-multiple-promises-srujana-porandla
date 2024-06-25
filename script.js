@@ -12,8 +12,8 @@ const promises=[
 	createPromise(),
     createPromise()
 ];
-const tableBody = document.getElementById('tbody');
-const loadingRow = document.getElementById('loadingRow');
+const tableBody = document.getElementById('output');
+const loadingRow = document.getElementById('loading');
 
 
 loadingRow.style.display = ''
